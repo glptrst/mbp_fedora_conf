@@ -8,7 +8,7 @@ fs.readFile('/sys/module/hid_apple/parameters/fnmode', 'utf8', (err, data) => {
 	if (data === '2\n') {
 	    console.log('fnmode already set to 2');
 	} else {
-	    fs.writeFile('/sys/module/hid_apple/parameters/fnmode', '1', (err) => {
+	    fs.writeFile('/sys/module/hid_apple/parameters/fnmode', '2', (err) => {
 		if (err)
 		    throw err;
 		else 
